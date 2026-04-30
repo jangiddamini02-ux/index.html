@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my web code</title>
+    <style>
+      main {
+         max-width: 1020px;
+         margin: 0 auto;
+      }
+      nav { 
+         display: flex;
+         justify-content: space-between;
+         background-color: #222;
+         padding: 10px;
+         color: white;
+         align-items: center;
+      }
+      .inner-nav {
+         display: flex;
+         gap: 10px;
+      }
+      .inner-nav a {
+         color: white;
+         text-decoration: none;
+      }
+      nav.navbar {
+    flex-direction: column;
+}
+h1 {font-size: 19px;
+text-align: center;}
+h3 {font-size: 16px;}
+      section {
+      border-width: 50px;}
+      section  {
+         background-color: aquamarine;
+      }
+   section#myform {
+    background-color: green;
+}
+      #myform form {
+         display: flex;
+         flex-direction: column;
+         max-width: 400px;
+         margin: 0 auto;
+         gap: 10px;
+      }
+      .my-cards {
+         display: flex;
+         flex-direction: row;
+         gap: 20px;
+         justify-content: center;
+      }
+      .my-cards .card {
+         background-color: #222;
+         color: white;
+         padding: 20px;
+         border-radius: 10px;
+      }
+      my logo {
+         max-width: 150px;
+      }
+      @media screen and (max-width: 768px) {
+        .my-cards {
+         flex-direction: column;
+        }
+      } 
+      .navbar {
+         flex-direction: column;
+      }
+      .outer-form {
+         flex-direction: column;
+      }
+       .form-outer {
+    display: flex;
+}
+    </style>
+</head>
+<body style="margin-left: 50px;">
+   <main>
+     <nav class="navbar">
+      <img class="my logo" src="https://www.biyanicolleges.org/wp-content/uploads/2020/02/logo-new.png.webp" alt="My logo image">
+      <div class="inner-nav">
+        <a href="#abouthobby">home</a>
+        <a href="https://google.com" target="_blank">college</a>
+        <a href="https://google.com" target="_blank">aboutus</a>
+        <a href="#myform">Contact me</a>
+      </div>
+     </nav>    
+     <section class="myclass" id="aboutme";>
+      <h1>My Hobbies</h1>
+      <div class="my-cards">
+         <div class="card">
+        <h1>My name is damini.</h1>
+        <h2>My father name is ramavtar jangid.</h2>
+        <h3>I am pursuing BCA course.</h3>
+         </div>
+        <div class="my-cards">
+         <div class="card">
+        <h1>My hobby is dancing.</h1>
+        <h3>I like to do dance</h3>
+        </div>
+      </section>
+      <section class="myclass" id="abouthobby" ;>
+      <h1>My progress</h1>
+      <div class="my-cards">
+         <div class="card">
+        <label>My HTML progress</label>
+<progress value="70" max="100">
+         </div>
+        <div class="my-cards">
+         <div class="card">
+       <label>My Course progress</label>
+      <meter value="5" min="3" max="10" low="4" high="7">
+        </div>
+        </div>
+      </section>
+<section id="myform">
+   <h1>Contact Us</h1>
+   <div class="form-outer">
+      <div class="my-details">
+         <h3>My Email</h3>
+         <p>jangiddamini02@gmail.com</p>
+         <h3>My Phone:</h3>
+         <p>+91 9530494970</p>
+         </div>
+   <form id="myForm">
+       <input  id="name" type="text" name="text"
+      placeholder="Your name">
+      <input id="email" type="email" name="email"
+      placeholder="Your email">
+      <input type="date" name="date" >
+      <select>
+         <option>1st year</option>
+         <option>2nd year</option>
+         <option>3rd year</option>
+      </select>
+      <input list="browsers" id="mylist"
+      placeholder="select or type...">
+      <datalist id="browsers">
+          <option>1st year</option>
+         <option>2nd year</option>
+         <option>3rd year</option>
+</datalist>
+         <textarea id="textarea" rows="4" placeholder="Your message"></textarea>
+      <button type="submit">submit
+      </button>
+   </form>
+</section>
+<section class="myclass" id="abouthobby">
+   <h1>My hobby</h1>
+   <h3>i like to do dancing.</h3>
+</section>
+     
+     <section>
+      <details>
+         <summary>I have a secret</summary>
+         <p>I can solve the Rubik's cube in a minute.</p>
+      </details>
+     </section>
+     <section>
+      <label>My HTML progress</label>
+      <progress value="70" max="100">
+     </section>
+     <section>
+      <label>My course progress</label>
+      < meter value="7" min="3" max="10" low="4" high="7">
+     </section>
+     <section>
+      <input type="color" name="color">
+      <br>
+      <input type="date" name="date">
+      <br>
+      <input type="range" value="70" max="100">
+     </section>
+     <section>
+      <table border="1">
+         <thead>
+            <tr>
+            <th>SR.NO.</th>
+            <th>Student Name</th>
+            <th>Student Class</th>
+            <th>Student Hobby</th>
+            <th>progress</th>
+            <th>meter</th>
+            </tr>
+         </thead>
+         <tbody>
+           <tr>
+            <td>1</td>
+            <td>Damini</td>
+            <td>1st year</td>
+            <td>dancing</td>
+            <td><progress value="70" max="100"></progress></td>
+            <td><meter value="7" min="3" max="10"></meter> </td>
+            </tr>
+            <tr>
+               <td>2</td>
+               <td>Neha</td>
+               <td>2nd year</td>
+               <td>reading</td>
+               <td><progress value="70" max="100"></progress></td>
+               <td><meter value="7" min="3" max="10"></meter> </td>
+            </tr>
+         </tbody>
+      </table>
+      <section>
+         <audio controls loop>
+            <source src="C:\Users\hp\Downloads\Doraemon.mp3" type="audio/mp3">
+         </audio>
+      </section>
+      <section>
+         <video controls height="200px">
+            <source src="C:\Users\hp\Downloads\1000118552.mp4" type="video/mp4">
+         </video>
+      </main>
+
+      <input id="myTitle" type="text" name="text" placeholder="Enter Your text here...">
+      <button onclick="changeText()">Click to transform</button>
+
+      <p id="showQuote"></p>
+
+      <script>
+         let myForm = document.getElementById("myForm");
+
+         myForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            let myName = document.getElementById("name");
+            let myEmail = document.getElementById("email");
+            let myTextarea = document.getElementById("textarea");
+
+            let nameValue = myName.value;
+            let emailValue = myEmail.value;
+            let textareaValue = myTextarea.value;
+
+            if(nameValue === "" || emailValue === "" || textareaValue === "") {
+               alert("Enter name first");
+            }
+            else{
+               alert("Success!!");
+            }
+
+         });
+         function changeText(){
+
+         let initialText = document.getElementById("myTitle");
+         let myValue = initialText.value;
+         let myQuote = document.getElementById("showQuote");
+         myQuote.innerText = myValue;
+         initialText.value = "";
+         }
+      </script>
+</body>
+</html>
